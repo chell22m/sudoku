@@ -1,0 +1,17 @@
+javac SudokuSolver.java
+rm -f FileOutput.txt
+echo STANDARD_BACKTRACKING >> FileOutput.txt
+java SudokuSolver sodoku.txt >> FileOutput.txt
+java SudokuSolver TestCase1.txt >> FileOutput.txt
+java SudokuSolver TestCase2.txt >> FileOutput.txt
+java SudokuSolver TestCase3.txt >> FileOutput.txt
+echo FC >> FileOutput.txt
+java SudokuSolver sodoku.txt FC >> FileOutput.txt
+java SudokuSolver TestCase1.txt FC >> FileOutput.txt
+java SudokuSolver TestCase2.txt FC >> FileOutput.txt
+java SudokuSolver TestCase3.txt FC >> FileOutput.txt
+echo FC+MRV>> FileOutput.txt
+java SudokuSolver sodoku.txt FC MRV >> FileOutput.txt
+java SudokuSolver TestCase1.txt FC MRV >> FileOutput.txt
+java SudokuSolver TestCase2.txt FC MRV >> FileOutput.txt
+java SudokuSolver TestCase3.txt FC MRV >> FileOutput.txt
