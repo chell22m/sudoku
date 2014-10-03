@@ -1,0 +1,28 @@
+README
+
+This sudoku program solves any starting or incomplete sudoku puzzle and writes the solution to FileOutput.txt. Any incorrect starting sudoku puzzle will be returned incomplete.
+
+Usage: 
+Either use the RUNME to execute all sudoku test files at once with all algorithm options, or execute each singularly using the command below:
+
+java SudokuSolver <inputFile> <techniques | optional (2 max)>
+
+Examples:
+java SudokuSolver sodoku.txt
+java SudokuSolver sodoku.txt FC
+java SudokuSolver sodoku.txt FC MRV
+
+Default:
+Naive Backtracking search algorithm
+
+Options:
+FC : Forward Checking technique
+MRV : Minimum Remaining Values heuristic
+
+Result:
+Total Time (ns)
+Search Time (ns)
+Number of Backtracks
+Number of Nodes generated
+
+Authors: Monica Chelliah & Phuong Vu
